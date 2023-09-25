@@ -1,0 +1,22 @@
+body {
+  /*body태그 css style 적용*/
+  font: 100% Lucida Sans, Verdana; /*폰트 설정*/
+  margin: 20px; /*마진 설정*/
+  line-height: 26px; /*줄 높이 설정*/
+}
+
+#top {
+  /*최상단에 위치한 div태그에 css style 적용*/
+  background-color: #04aa6d; /*배경색 설정*/
+  color: #ffff; /*글자색 설정*/
+  border-radius: 4px; /*둥글게*/
+  margin: 4px; /*마진 설정*/
+  padding: 15px; /*패딩 설정*/
+}
+
+#top h1,
+#top p {
+  /*top id를 가진 div태그가 포함하는 h1과 p 태그에 css style 적용*/
+  margin: 0;
+  padding: 0;
+}
