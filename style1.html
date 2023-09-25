@@ -15,10 +15,18 @@
       <div class="wrapper">
         <div id="menubar">
           <ul id="menulist">
-            <li class="menuitem" onclick="reStyle(0)">Stylesheet 1</li>
-            <li class="menuitem" onclick="reStyle(1)">Stylesheet 2</li>
-            <li class="menuitem" onclick="reStyle(2)">Stylesheet 3</li>
-            <li class="menuitem" onclick="reStyle(3)">Stylesheet 4</li>
+            <li class="menuitem" onclick="changeStyle('stylesheet1.css')">
+              Stylesheet 1
+            </li>
+            <li class="menuitem" onclick="changeStyle('stylesheet2.css')">
+              Stylesheet 2
+            </li>
+            <li class="menuitem" onclick="changeStyle('stylesheet3.css')">
+              Stylesheet 3
+            </li>
+            <li class="menuitem" onclick="changeStyle('stylesheet4.css')">
+              Stylesheet 4
+            </li>
             <li class="menuitem" onclick="noStyles()">No Stylesheet</li>
           </ul>
         </div>
@@ -30,17 +38,21 @@
             selecting different stylesheets in the menu, or by selecting one of
             the following links:
             <br />
-            <a href="#" onclick="reStyle(0); return false">Stylesheet1</a>,
-            <a href="#" onclick="reStyle(1); return false">Stylesheet2</a>,
-            <a href="#" onclick="reStyle(2); return false">Stylesheet3</a>,
-            <a href="#" onclick="reStyle(3); return false">Stylesheet4</a>.
+            <a href="#" onclick="changeStyle('stylesheet1.css')">Stylesheet1</a
+            >,
+            <a href="#" onclick="changeStyle('stylesheet2.css')">Stylesheet2</a
+            >,
+            <a href="#" onclick="changeStyle('stylesheet3.css')">Stylesheet3</a
+            >,
+            <a href="#" onclick="changeStyle('stylesheet4.css')">Stylesheet4</a
+            >.
           </p>
           <h2>No Styles</h2>
           <p>
             This page uses DIV elements to group different sections of the HTML
             page. Click here to see how the page looks like with no stylesheet:
             <br />
-            <a href="#" onclick="noStyles(); return false">No Stylesheet</a>.
+            <a href="#" onclick="noStyles()">No Stylesheet</a>.
           </p>
         </div>
         <div id="sidebar">
@@ -63,5 +75,17 @@
         zzril delenit augue duis dolore te feugait nulla facilisi.
       </div>
     </div>
+    <script>
+      function changeStyle(newStylesheet) {
+        //현재 stylesheet 비활성화
+        document.getElementById("stylesheet").disabled = true;
+        //새로운 stylesheet 활성화
+        document.getElementById("stylesheet").href = newStylesheet;
+        document.getElementById("stylesheet").disabled = false;
+      }
+      function noStyles() {
+        document.getElementById("stylesheet").disabled = true;
+      }
+    </script>
   </body>
 </html>
