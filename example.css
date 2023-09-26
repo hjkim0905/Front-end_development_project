@@ -54,9 +54,11 @@ body {
   width: 300px;
   height: 46px;
   border-radius: 4px;
-  border: solid 0.1px;
+  border: solid 0.1px #ced4da;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  font-size: 16px;
+  border-bottom: white;
 }
 
 #inputPassword {
@@ -66,14 +68,31 @@ body {
   width: 300px;
   height: 46px;
   border-radius: 4px;
-  border: solid 0.1px;
-  border-top: white;
+  border: solid 0.1px #ced4da;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  font-size: 16px;
+}
+
+#inputEmail:focus {
+  border-color: #0062cc;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  z-index: 1;
+}
+
+#inputPassword:focus {
+  border-color: #0062cc;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 #divCheck {
   width: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #inputCheck {
@@ -89,4 +108,30 @@ body {
   background-color: #007bff;
   color: #ffffff;
   border-radius: 4px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.copyrights {
+  color: #6c757d;
+  font-size: 16px;
+}
+
+#heading {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#buttonSubmit:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+#buttonSubmit:focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
