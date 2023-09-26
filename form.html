@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>동아리 지원서</h1>
+    <form action="" method="get">
+      <fieldset>
+        <legend>개인정보</legend>
+        <label>이름: </label><input type="text" /><br />
+        <label>성별: </label>
+        <input type="radio" />남 <input type="radio" /> 여 <br />
+        <label>생년월일: </label>
+        <input type="date" /><br />
+        <label>통신사: </label>
+        <select name="telecom">
+          <option value="KT">KT</option>
+          <option value="SKT">SKT</option>
+          <option value="LG">LG</option>
+        </select>
+        <label>전화번호: </label><input type="text" /><br />
+        <label>활용 가능 언어: </label><input type="checkbox" />C
+        <input type="checkbox" />C++ <input type="checkbox" />Python
+        <input type="checkbox" />Java <br />
+        <label>자기소개 및 각오: </label><br />
+        <textarea
+          name="introduce"
+          form="application"
+          cols="40"
+          rows="10"
+        ></textarea
+        ><br />
+        <input type="submit" value="제출" />
+        <input type="reset" value="초기화" />
+      </fieldset>
+    </form>
+  </body>
+</html>
